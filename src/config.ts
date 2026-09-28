@@ -50,25 +50,25 @@ Aku bakal selalu ada buat kamu. 💓`,
   // More Memories carousel (5 foto berbeda)
   moreMemories: [
     {
-      image: "/images/1.jpeg",
+      image: "/images/m1.jpeg",
     },
     {
-      image: "/images/2.jpeg",
+      image: "/images/m2.jpeg",
     },
     {
-      image: "/images/3.jpeg",
+      image: "/images/m3.jpeg",
     },
     {
-      image: "/images/4.jpeg",
+      image: "/images/m4.jpeg",
     },
     {
-      image: "/images/5.jpeg",
+      image: "/images/m5.jpeg",
     },
     {
-      image: "/images/6.jpeg",
+      image: "/images/m6.jpeg",
     },
     {
-      image: "/images/7.jpeg",
+      image: "/images/m7.jpeg",
     }
   ],
 
