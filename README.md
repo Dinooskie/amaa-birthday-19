@@ -1,4 +1,4 @@
-# Our Little Story ❤️
+# Our Little Story ♡
 
 *A little interactive love story, made with a lot of heart.*
 
@@ -148,4 +148,4 @@ MIT License
 
 ---
 
-Built as a small digital surprise for someone special. ❤️
+Built as a small digital surprise for someone special. ♡

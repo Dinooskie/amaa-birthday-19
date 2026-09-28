@@ -1,23 +1,26 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 @theme {
-  --color-romantic-50: #fdf2f8;
-  --color-romantic-100: #fce7f3;
-  --color-romantic-200: #fbcfe8;
-  --color-romantic-300: #f9a8d4;
-  --color-romantic-400: #f472b6;
-  --color-romantic-500: #ec4899;
-  --color-romantic-600: #db2777;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "DM Sans", sans-serif;
+  --color-romantic-50: #FAF6F5;
+  --color-romantic-100: #F2E8E5;
+  --color-romantic-200: #E4D4D0;
+  --color-romantic-300: #D0B8B0;
+  --color-romantic-400: #B8958A;
+  --color-romantic-500: #A67C6D;
+  --color-romantic-600: #8B6356;
 }
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-romantic-50 via-romantic-100 to-white min-h-screen text-slate-800 antialiased overflow-x-hidden;
+    @apply bg-gradient-to-br from-romantic-50 via-romantic-100 to-white min-h-screen text-neutral-800 antialiased overflow-x-hidden;
   }
 }
 
 .glass-card {
-  @apply bg-white/40 backdrop-blur-md border border-white/60 shadow-[0_8px_32px_0_rgba(236,72,153,0.1)] rounded-3xl;
+  @apply bg-white/40 backdrop-blur-md border border-white/60 shadow-[0_8px_32px_0_rgba(166,124,109,0.1)] rounded-3xl;
 }
 
 /* Custom scrollbar for webkit */

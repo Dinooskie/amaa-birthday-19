@@ -1,54 +1,80 @@
 export const config = {
-  girlfriendName: "Sanzida", // Sanzida
-  myName: "Sajeeb", // Sajeeb
+  girlfriendName: "Amaa", // Sanzida
+  myName: "Dino", // Sajeeb
   
-  // The main question
-  questionText: "Do you love me? 🥺❤️",
-  
-  // The different texts for the NO button
-  noButtonTexts: [
-    "NO 😐",
-    "Are you sure? 🥺",
-    "Really? 😭",
-    "Think again! 💔",
-    "Please? 🥺👉👈",
-    "Okay... one more chance? ❤️"
-  ],
+  // Layar tiup lilin (Bahasa Indonesia)
+  blowCandles: {
+    title: " Tiup Lilin Sayang!",
+    wishPrompt: "Tutup mata kamu sebentar, ucapkan keinginan kamu dalam hati, lalu tiup lilinnya...",
+    hint: "Ketuk lilin untuk meniupnya 🕯️",
+    progressText: "lilin sudah padam",
+    blowAllText: "Tiup semuanya sekaligus",
+    completeText: "Permintaan kamu sudah terkirim✨",
+    continueText: "Kita lanjut yaa!",
+    candleCount: 1,
+  },
 
-  // After YES is clicked
-  celebrationTitle: "I KNEW IT! 😍❤️",
-  celebrationSubtitle: "You just made me the happiest person in the world.",
-  celebrationMessage: "I love you more than words can explain. ❤️",
+  // After all candles are blown
+  celebrationTitle: "Selamat ulang tahun sayang♡",
+  celebrationSubtitle: "Panjang umur sehat selalu",
+  celebrationMessage: "Semoga tahun ini jadi tahun terindah buat kamu, sayang. 💗",
 
   // Typewriter message
-  loveMessage: `Every moment with you is special.
-Every conversation with you makes my day better.
-And no matter how many times I ask...
+  loveMessage: `Selamat ulang tahun, sayang!
 
-I will always choose you. ❤️`,
+Di hari spesialmu ini, aku cuma mau bilang...
+Terima kasih udah jadi bagian terindah di hidup aku.
+Semoga semua yang kamu semogakan tersemogakan.
 
-  // Memories section
+Aku bakal selalu ada buat kamu. 💓`,
+
+  // Memories section (grid 3 foto)
   memories: [
     {
-      title: "Our First Conversation",
-      caption: "Where everything started. ❤️",
-      image: "https://i.ibb.co/bMPm7GDb/Chat-GPT-Image-Aug-2-2026-10-34-35-PM.png", // Real couple holding hands
+      title: "Pertama kali kita foto bareng",
+      caption: "Dimana semuanya dimulai, sehari sebelum jadian, kita foto bareng. ♡",
+      image: "/src/assets/photo/memories/1.jpeg",
     },
     {
-      title: "That Special Day",
-      caption: "A memory I will always keep close to my heart.",
-      image: "https://i.ibb.co/wFcXDQrc/Chat-GPT-Image-Aug-2-2026-10-35-39-PM.png", // Real romantic couple
+      title: "Hari yang sangat spesial",
+      caption: "Seneng banget ulang tahun aku dirayain sama orang yang spesial. 💝",
+      image: "/src/assets/photo/memories/2.jpeg",
     },
     {
-      title: "Us",
-      caption: "Just two people, one beautiful story.",
-      image: "https://i.ibb.co/xKZkzxB6/Chat-GPT-Image-Aug-2-2026-10-37-14-PM.png", // Aesthetic romantic couple
+      title: "Cerita kita♡",
+      caption: "Banyak banget hal yang udah kita lewatin bareng-bareng",
+      image: "/src/assets/photo/memories/3.jpeg",
+    },
+  ],
+
+  // More Memories carousel (5 foto berbeda)
+  moreMemories: [
+    {
+      image: "/src/assets/photo/morememories/1.jpeg",
+    },
+    {
+      image: "/src/assets/photo/morememories/2.jpeg",
+    },
+    {
+      image: "/src/assets/photo/morememories/3.jpeg",
+    },
+    {
+
+      image: "/src/assets/photo/morememories/4.jpeg",
+    },
+    {
+
+      image: "/src/assets/photo/morememories/5.jpeg",
+    },
+    {
+
+      image: "/src/assets/photo/morememories/6.jpeg",
+    },
+    {
+
+      image: "/src/assets/photo/morememories/7.jpeg",
     }
   ],
 
-  finalMessage: "Thank you for being a beautiful part of my life.",
-  
-  // Optional background music URL (must be a valid direct audio link)
-  musicUrl: "https://archive.org/download/indila-love-story-48105410/Indila_-_Love_Story_48105410.mp3",
-  musicStartTime: 250, // The iconic instrumental part starts near the end (around 4:10)
+  finalMessage: "Terima kasih udah hadir di hidupku. Semoga kita bisa bikin banyak momen lagi bareng-bareng.",
 };

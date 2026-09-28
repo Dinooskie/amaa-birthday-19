@@ -1,26 +1,22 @@
 import { useState } from 'react';
 import { WelcomeScreen } from './components/WelcomeScreen';
-import { QuestionScreen } from './components/QuestionScreen';
+import { BlowCandlesScreen } from './components/BlowCandlesScreen';
 import { CelebrationScreen } from './components/CelebrationScreen';
 import { LoveMessage } from './components/LoveMessage';
 import { MemoriesSection } from './components/MemoriesSection';
+import { MemoriesCarousel } from './components/MemoriesCarousel';
 import { FinalSection } from './components/FinalSection';
 import { FloatingHearts } from './components/FloatingHearts';
-import { MusicControl } from './components/MusicControl';
-import { config } from './config';
 import { AnimatePresence } from 'motion/react';
 
 export default function App() {
-  const [step, setStep] = useState<'welcome' | 'question' | 'celebration'>('welcome');
-  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [step, setStep] = useState<'welcome' | 'blowCandles' | 'celebration'>('welcome');
 
-  // Auto-play music if allowed, or start it when user interacts
   const handleStart = () => {
-    setStep('question');
-    setIsMusicPlaying(true);
+    setStep('blowCandles');
   };
 
-  const handleYes = () => {
+  const handleBlowComplete = () => {
     setStep('celebration');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -33,23 +29,14 @@ export default function App() {
   return (
     <div className="relative min-h-screen">
       <FloatingHearts />
-      
-      {config.musicUrl && (
-        <MusicControl 
-          url={config.musicUrl} 
-          isPlaying={isMusicPlaying} 
-          onTogglePlay={() => setIsMusicPlaying(!isMusicPlaying)} 
-          startTime={config.musicStartTime}
-        />
-      )}
 
       <AnimatePresence mode="wait">
         {step === 'welcome' && (
           <WelcomeScreen key="welcome" onStart={handleStart} />
         )}
         
-        {step === 'question' && (
-          <QuestionScreen key="question" onYes={handleYes} />
+        {step === 'blowCandles' && (
+          <BlowCandlesScreen key="blowCandles" onComplete={handleBlowComplete} />
         )}
       </AnimatePresence>
 
@@ -58,6 +45,7 @@ export default function App() {
           <CelebrationScreen />
           <LoveMessage />
           <MemoriesSection />
+          <MemoriesCarousel />
           <FinalSection onReplay={handleReplay} />
         </div>
       )}

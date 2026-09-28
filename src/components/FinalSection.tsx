@@ -16,21 +16,21 @@ export function FinalSection({ onReplay }: FinalSectionProps) {
         transition={{ duration: 1 }}
         className="max-w-xl w-full"
       >
-        <p className="text-xl text-slate-500 font-medium mb-8 uppercase tracking-widest">
-          One last thing...
-        </p>
+         <p className="text-xl text-romantic-500 font-body mb-8 uppercase tracking-widest">
+           Satu lagi...
+         </p>
         
-        <h2 className="text-4xl md:text-6xl font-bold text-romantic-600 mb-8 font-serif">
-          I LOVE YOU, {config.girlfriendName} ❤️
+         <h2 className="text-4xl md:text-6xl font-bold text-romantic-600 mb-8 font-heading">
+          I LOVE YOU, {config.girlfriendName} 💖
         </h2>
         
-        <p className="text-xl text-slate-700 mb-12">
-          {config.finalMessage}
-        </p>
+         <p className="text-xl md:text-2xl text-slate-700 font-heading mb-12 italic leading-relaxed">
+           {config.finalMessage}
+         </p>
 
         <div className="flex flex-col items-center justify-center space-y-6">
-          <p className="text-2xl font-serif text-slate-800 italic">
-            Forever yours,<br/>
+           <p className="text-2xl font-heading text-slate-800 italic">
+            Dari yang terus berusaha,<br/>
             <span className="font-bold not-italic text-romantic-500 mt-2 block">{config.myName}</span>
           </p>
           
@@ -44,10 +44,10 @@ export function FinalSection({ onReplay }: FinalSectionProps) {
 
           <button
             onClick={onReplay}
-            className="group flex items-center gap-2 bg-white hover:bg-romantic-50 text-romantic-500 font-medium py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-romantic-200"
+             className="group flex items-center gap-2 bg-white hover:bg-romantic-50 text-romantic-500 font-body py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-romantic-200"
           >
             <RotateCcw size={18} className="group-hover:-rotate-90 transition-transform duration-500" />
-            Replay Our Story
+            Ulangi Lagi
           </button>
         </div>
       </motion.div>
