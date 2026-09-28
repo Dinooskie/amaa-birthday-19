@@ -33,46 +33,36 @@ Aku bakal selalu ada buat kamu. 💓`,
     {
       title: "Pertama kali kita foto bareng",
       caption: "Dimana semuanya dimulai, sehari sebelum jadian, kita foto bareng. ♡",
-      image: "/src/assets/photo/memories/1.jpeg",
+      image: "/images/1.jpeg",
     },
     {
       title: "Hari yang sangat spesial",
       caption: "Seneng banget ulang tahun aku dirayain sama orang yang spesial. 💝",
-      image: "/src/assets/photo/memories/2.jpeg",
+      image: "/images/2.jpeg",
     },
     {
       title: "Cerita kita♡",
       caption: "Banyak banget hal yang udah kita lewatin bareng-bareng",
-      image: "/src/assets/photo/memories/3.jpeg",
+      image: "/images/3.jpeg",
     },
   ],
 
   // More Memories carousel (5 foto berbeda)
   moreMemories: [
     {
-      image: "/src/assets/photo/morememories/1.jpeg",
+      image: "/images/1.jpeg",
     },
     {
-      image: "/src/assets/photo/morememories/2.jpeg",
+      image: "/images/2.jpeg",
     },
     {
-      image: "/src/assets/photo/morememories/3.jpeg",
+      image: "/images/3.jpeg",
     },
     {
-
-      image: "/src/assets/photo/morememories/4.jpeg",
+      image: "/images/4.jpeg",
     },
     {
-
-      image: "/src/assets/photo/morememories/5.jpeg",
-    },
-    {
-
-      image: "/src/assets/photo/morememories/6.jpeg",
-    },
-    {
-
-      image: "/src/assets/photo/morememories/7.jpeg",
+      image: "/images/5.jpeg",
     }
   ],
 
