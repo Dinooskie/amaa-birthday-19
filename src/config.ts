@@ -63,6 +63,12 @@ Aku bakal selalu ada buat kamu. 💓`,
     },
     {
       image: "/images/5.jpeg",
+    },
+    {
+      image: "/images/6.jpeg",
+    },
+    {
+      image: "/images/7.jpeg",
     }
   ],
 
