@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Heart } from 'lucide-react';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { config } from '../config';
 
 interface QuestionScreenProps {
@@ -20,10 +20,8 @@ export function QuestionScreen({ onYes }: QuestionScreenProps) {
   const handleNoHoverOrClick = () => {
     setNoClicks(prev => prev + 1);
     
-    // Calculate safe boundaries
-    if (containerRef.current && noButtonRef.current) {
-      const containerRect = containerRef.current.getBoundingClientRect();
-      const btnRect = noButtonRef.current.getBoundingClientRect();
+    if (noButtonRef.current) {
+       const btnRect = noButtonRef.current.getBoundingClientRect();
       
       // Calculate max safe movement based on viewport to avoid scrolling
       const maxX = window.innerWidth - btnRect.width - 40; // 40px padding

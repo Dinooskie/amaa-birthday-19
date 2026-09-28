@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { WelcomeScreen } from './components/WelcomeScreen';
 import { QuestionScreen } from './components/QuestionScreen';
 import { CelebrationScreen } from './components/CelebrationScreen';

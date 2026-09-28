@@ -50,10 +50,8 @@ export function FloatingHearts() {
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-romantic-50/50 via-romantic-100/50 to-romantic-200/50"></div>
       
-      {hearts.map((heart) => {
-        // Parallax effect based on depth
-        const parallaxX = mousePos.x * heart.depth * 30;
-        const parallaxY = mousePos.y * heart.depth * 30;
+       {hearts.map((heart) => {
+         const parallaxX = mousePos.x * heart.depth * 30;
 
         return (
           <motion.div
